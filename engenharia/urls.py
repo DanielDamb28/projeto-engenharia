@@ -17,8 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from .views import login_screen
+from .views import login_screen, register_screen
 
 urlpatterns = [
     path('login/', login_screen),
+    path('register/', register_screen),
 ]
